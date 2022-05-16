@@ -1,0 +1,125 @@
+/* CUSTOM PROPERTIES*/
+:root{
+    --colorMine   : rgb(22, 22, 22);
+    --colorSecond : #fff;
+    --fontMain    : 'Libre Franklin', sans-serif;
+    --fontSecond  : 'Libre Franklin', sans-serif; 
+}
+
+/* DARK MODE BY USER */
+@media (prefers-color-scheme: dark){
+    :root{
+        --colorMineDarkMode     : #fff;
+        --color-secondDarkMode  : #000;
+    }
+}
+
+/* HIGH CONTRAST BY USER */
+@media (prefers-contrast: dark){
+    :root{
+        --colorMineHighContrast    : #fff;
+        --color-secondHighContrast : #000;
+    }
+}
+
+/* DISABLE ANIMATION BY USER */
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation  : none;
+        transition : none;
+    }
+}
+
+/* SCROLL */
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* MARGIN AND PADDING */
+*{
+    margin     : 0;
+    padding    : 0;
+    border     : 0;
+    box-sizing : border-box;
+    /* vertical-align: baseline; */
+}
+
+/* IMAGES */
+img, picture, video, iframe, figure{
+    max-width : 100%;
+    width     : 100%;
+    display   : block;
+}
+
+/* LINKS */
+a {
+    display: inline;  
+}
+p a {
+    display: inline;
+}
+
+ /* LIST */
+ li {
+     list-style-type: none;
+ }
+
+ /* FONT */
+ h1,h2,h3,h4,h5,h6,p,span,a,strong,blockquote,i,b,u,em{
+     font-size      : 1rem;
+     font-weight    : inherit;
+     font-style     : inherit;
+     text-decoration: none;
+     color          : inherit;
+ }
+
+/* PSEUDO ELEMENT OF QUOTES */
+blockquote::before, blockquote::after, q::before,q::after{
+     content: '';
+     content: none;
+ }
+
+/* TEXT SELECTION*/
+::selection{
+    background-color : var(--colorMine);
+    color            : var(--colorSecond);
+}
+
+/* FORM  */
+form, input, textarea, select, button, label{
+    font-family     : inherit;
+    font-size       : inherit;
+    hyphens         : auto;
+    background-color: transparent;
+    display         : block;
+    color           : inherit;
+}
+input:enabled, textarea:enabled, select:enabled{
+    outline: none;
+}
+
+
+/* TABLES */
+table, tr, td{
+    border-collapse : collapse;
+    border-spacing  : 0;
+}
+
+/* SVG */
+svg{
+    width   : 100%;
+    display : inline;
+    fill    : currentColor;
+}
+
+/* TYPOGRAPHY  */
+html{
+    /* min-height: 100vh; */
+    font-size        : 62.5%; 
+    font-family      : var(--fontMain);
+    color            : var(--colorMine);
+    background-color : var(--colorSecond);
+    /* line-height      : 1.4rem; */
+}
