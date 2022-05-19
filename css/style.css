@@ -203,3 +203,12 @@ footer .copyright{
      }
  
  }
+
+ @media (min-width: 1024px) {
+    header{
+        height: 20vh;
+    }
+    main{
+        height: 80vh;
+    }
+ }
