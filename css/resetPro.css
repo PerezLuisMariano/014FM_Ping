@@ -1,6 +1,6 @@
 /* CUSTOM PROPERTIES*/
 :root{
-    --colorMine   : rgb(22, 22, 22);
+    --colorMine   : hsl(209, 33%, 12%);
     --colorSecond : #fff;
     --fontMain    : 'Libre Franklin', sans-serif;
     --fontSecond  : 'Libre Franklin', sans-serif; 
@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: dark){
     :root{
         --colorMineDarkMode     : #fff;
-        --color-secondDarkMode  : #000;
+        --color-secondDarkMode  : hsl(209, 33%, 12%);
     }
 }
 
@@ -83,7 +83,7 @@ blockquote::before, blockquote::after, q::before,q::after{
 
 /* TEXT SELECTION*/
 ::selection{
-    background-color : var(--colorMine);
+    background-color : hsl(223, 87%, 63%);
     color            : var(--colorSecond);
 }
 
@@ -122,4 +122,9 @@ html{
     color            : var(--colorMine);
     background-color : var(--colorSecond);
     /* line-height      : 1.4rem; */
+}
+
+
+@media screen {
+    
 }
