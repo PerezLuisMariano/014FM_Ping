@@ -1,11 +1,11 @@
 ## Ping, Coming Soon Page
 
 ### Screenshot
-![version-desk](design/me/)
+![version-desk](design/design.png)
 
 
 ### Links
-- [Live Site ](https://perezluismariano.github.io//)
+- [Live Site ](https://perezluismariano.github.io/014FM_Ping/)
 
 ### Built with
 - Semantic HTML5 markup
