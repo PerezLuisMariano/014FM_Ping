@@ -69,9 +69,10 @@ main .sec1_paragraph{
 
 /* MAIN  SECTION 2 */
 main .sec2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
     width: 100%;
     height: auto;
     gap: 10px;
@@ -103,6 +104,17 @@ main .sec1_input-button{
 main .sec1_input-button:hover{
     opacity: 75%;
 }
+main .sec1_output{
+    display: none;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;    
+    font-style: italic;
+    height: 20px;
+    margin: 10px 0 0 0;
+}
+
+
 
 /* MAIN  SECTION 3 */
 main .sec3{
@@ -186,29 +198,35 @@ footer .copyright{
      }
      /* MAIN  SECTION 2 */
      main .sec2 {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 1fr);
      }
      main .sec1_input-text{
+         grid-area: 1 / 1 / 2 / 2;
+         justify-self: end;
          max-width: 300px;
          height: 45px;
          font-size: 1.4rem;
      }
      main .sec1_input-button{
+         grid-area: 1 / 2 / 2 / 3;
+         justify-self: start;
          max-width: 135px;
          height: 45px;
          border-radius: 25px;
+     }
+     main .sec1_output{
+        grid-area: 2 / 1 / 3 / 3;
      }
  
  }
 
  @media (min-width: 1024px) {
     header{
-        height: 20vh;
+        height: 17vh;
     }
     main{
-        height: 80vh;
+        height: 87vh;
     }
  }
